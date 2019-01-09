@@ -1,0 +1,72 @@
+<!-- Welcome to the code of my website! Look around on how I build my website or do whatever pleases you. :D -->
+<!DOCTYPE html>
+<html lang="en">	
+  <head>
+    <title>Unblock It Now - Home</title>
+    <link rel="shortcut icon" href="https://i.imgur.com/DUSrDo7.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  </head>
+  <body id="body" class="body"> 
+    <div id="secret">
+      <div class="intro">
+        <div class="navbar">
+          <img src="https://i.imgur.com/PgRR0D6.png" alt="Unblock it Now logo" style="width:50px;height:50px;float:left">
+          <a class="active" style="margin:0 0 0 10px" href="/home.html"><h3 class="active">Home</h3></a>
+          <a href="/games.html"><h3>Games</h3></a>   
+          <a href="/request.html"><h3>Request</h3></a>
+          <a style="float:right" href="/about.html"><h3>About</h3></a>
+          <input type="button" value="Invert" onclick="document.getElementById('body').style.filter='invert(1)'">
+          <input type="button" value="Default" onclick="document.getElementById('body').style.filter='invert(0)'">
+          <button class="dropbtn topbutton" onclick="myDropdown()">Themes</button>
+          <div class="dropdown-content" id="myDropdown">
+            <input class="topbutton" type="button" value="Invert" onclick="document.getElementById('secret').style.filter='invert(%100)'">
+            <button class="topbutton">Red</button>
+            <button class="topbutton">Blue</button> 
+          </div>
+        </div>
+      </div>
+      <div class="tintro">
+        <h2 class=top style="color:#00FCFF">Unblock<span style="color:#0033FF">It</span><span style="color:#00D1FF">Now</span></h2>
+      </div>
+    </div>
+    <div id="into">
+      <div class="topsubtitle">
+        <div class="row">
+          <div class="column">
+            <a href="/games/tanktrouble2.html">
+              <img class=game src="https://i.imgur.com/kozBhn7.jpg"alt="Tank Trouble 2 image">
+              <h1 class=name>Tank Trouble 2</h1>
+            </a>
+          </div>
+          <div class="column">
+            <a href="/games/giveup2.html">
+              <img class=game src="https://i.imgur.com/xPugWGJ.png" alt="Give up robot 2 image">
+              <h1 class=name>Give up Robot 2</h1>
+            </a>
+          </div>
+          <div class="column">
+            <a href="/games/super-mario.html">
+              <img class=game src="https://i.imgur.com/kG4BwrE.jpg" alt="Super Mario Flash Image">
+              <h1 class=name>Super Mario Flash</h1>
+            </a>
+          </div>
+          <div class="column">
+            <a href="/games/impossiblequiz.html">
+              <img class=game src="https://i.imgur.com/22t8dbg.jpg" alt="The Impossible Quiz Image">
+              <h1 class=name>The Impossible Quiz</h1>
+            </a>
+          </div>
+          <div class="secret">
+            &nbsp;
+            <button class="button"><a class="buttontext" href="/games.html"><b>More Games</b></a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <script src="js/global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.2/mousetrap.min.js"></script>
+  </footer>
+</html>

@@ -1,0 +1,117 @@
+<!-- Welcome to the code of my website! Look around on how I build my website or do whatever pleases you. :D -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>About</title>
+		<style>
+			body {
+        		background: linear-gradient(-45deg, #d50cc7, #840cd5, #0cced5);
+        		animation: Gradient 15s ease infinite;
+        		height: 100vh;
+				color: #fff;
+				background-size: 400% 400%;
+				background-attachment: fixed;
+    			background-position: center;
+    			background-repeat: no-repeat;
+			} 
+
+			a {
+                color:slategrey;
+            }
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+            ::-webkit-scrollbar-track {
+                background: black;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: linear-gradient(-45deg, #ce33c3, #9033ce, #31d3d8);
+                animation: Gradient 15s ease infinite;
+                border-color: rgb(0,0,0);
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: linear-gradient(-45deg, #8e0885, #61079e, #078a8e);
+                animation: Gradient 15s ease infinite;
+            }
+			ul {
+                list-style-type:none;
+                margin:0;
+                top:10px;
+                padding:0;
+                float:top;
+                overflow:hidden;
+                position:sticky;
+                width:100%;
+                z-index:10;
+            }
+
+            li {
+                font-family: sans-serif;
+                display: inline;
+                float:left;
+                top: 0;
+            }
+            li a {
+                top: 0;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                border-radius: 4px;
+                transition-duration: 0.4s;
+            }
+            li a:hover {
+                background-color: white;
+                color:black;
+            }
+            button:hover {
+                background-color: aqua;
+                color:black;
+            }
+            @keyframes content {
+                0% {left:0px; top:200px; opacity: 0}
+                50% {left:0px; top:0px; opacity: 1}
+                100% {left:0px; top:0px; opacity: 1} 
+            }
+            @keyframes topsubtitles {
+                0% {left:0px; top:200px; opacity: 0}
+                100% {left:0px; top:0px; opacity: 1}
+            }
+            @keyframes Gradient {
+				0% {background-position: 0% 50%}
+				50% {background-position: 100% 50%}
+				100% {background-position: 0% 50%}
+			}
+            .content{
+            	opacity:0;
+                position:relative;
+                animation-name:content;
+                animation-duration:2s;
+                animation-fill-mode: forwards;
+                margin:200px;
+            }
+            .top {
+                font-family:sans-serif;
+                text-align:center;
+            }
+
+		</style>
+	</head>
+	<body>
+		<ul>
+            <li><img src="https://i.imgur.com/PgRR0D6.png" alt="Unblock it Now logo" class="centerimg" style="width:50px;height:50px;"></li>
+            <li class="active" style="margin:0 0 0 10px"><a class="active" href="/home.html">Home</a></li>
+            <li><a href="/games.html">Games</a></li>
+            <li><a href="/request.html">Request</a></li>
+            <li style="float:right"><a href="/about.html">About</a></li>
+        </ul>
+        <div class="toptexts">
+            <h2 class="top" style="color:#00FCFF;font-size:100px">Unblock<span style="color:#0033FF">It</span><span style="color:#00D1FF">Now</span></h2>
+        </div>
+        <div class="content">
+		<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quaerat perspiciatis nam similique repellendus et, cum quasi architecto voluptatum culpa odio sequi. Veritatis ducimus, temporibus laborum enim et, repellendus numquam.</h1>
+		</div>
+	</body>
+</html>

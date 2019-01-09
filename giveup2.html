@@ -1,0 +1,136 @@
+<!-- Welcome to the code of my website! Look around on how I build my website or do whatever pleases you. :D -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>New Tab</title>
+        <style type="text/css">
+            body {
+                background: linear-gradient(-45deg, #d50cc7, #840cd5, #0cced5);
+                animation: Gradient 15s ease infinite;
+                height: 100vh;
+                color: #fff;
+                background-size: 400% 400%;
+                background-attachment: fixed;
+    			background-position: center;
+    			background-repeat: no-repeat;
+            } 
+            .centerimg {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+            ::-webkit-scrollbar-track {
+                background: black;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: linear-gradient(-45deg, #ce33c3, #9033ce, #31d3d8);
+                animation: Gradient 15s ease infinite;
+                border-color: rgb(0,0,0);
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: linear-gradient(-45deg, #8e0885, #61079e, #078a8e);
+                animation: Gradient 15s ease infinite;
+            }
+            @keyframes Gradient {
+                0% {background-position: 0% 50%}
+                50% {background-position: 100% 50%}
+                100% {background-position: 0% 50%}
+            }
+            button {
+                border-radius: 4px;
+                transition-duration: 0.4s;
+                background-color: transparent;
+                color: white;
+                border: 2px solid aqua;
+                font-size: 24px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 12.5%;
+            }
+            ul {
+                list-style-type:none;
+                margin:0;
+                top:10px;
+                padding:0;
+                float:top;
+                overflow:hidden;
+                position:sticky;
+                width:100%;
+                z-index:10;
+            }
+
+            li {
+                font-family: sans-serif;
+                display: inline;
+                float:left;
+                top: 0;
+            }
+            li a {
+                top: 0;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                border-radius: 4px;
+                transition-duration: 0.4s;
+            }
+            li a:hover {
+                background-color: white;
+                color:black;
+            }
+            .column {
+                font-family:sans-serif;
+                transition:0.4s;
+                padding:0px;
+                border-radius:4px;
+            }
+            .row:after {
+                content:"";
+                display:table;
+                clear:both;
+            }
+			h1{
+				text-align:center;
+				font-family:sans-serif;
+				font-size:50pt;
+			}
+			h2 {
+				text-align:center;
+				font-family:sans-serif;
+				font-size:25pt;
+			}
+			a {
+			 	font-family: sans-serif;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><img src="https://i.imgur.com/PgRR0D6.png" alt="Unblock it Now logo" class="centerimg" style="width:50px;height:50px"; style="opacity: 0";></li>
+            <li style="margin:0 0 0 10px;"><a href="/home.html">Home</a></li>
+            <li><a href="/games.html">Games</a></li>
+            <li><a href="/request.html">Request</a></li>
+            <li style="float:right"><a href="/about.html">About</a></li>
+        </ul>
+        <h1>Give Up Robot 2</h1>
+        <h2>NOTE: After clicking play, right click and chose "Show All" to make it bigger.</h2>
+        <center>
+            <div class="row">
+                <div class="column">
+                    <div style="height:525px;width:640px">
+                        <object type="application/x-shockwave-flash" data="/gamesswf/giveuprobot2.swf" width="100%" height="100%" id="flashcontent" style="visibility:visible;"allowfullscreen="true"  >
+                        <param name="quality" value="low"></param>
+                        </object>
+                    </div>
+                </div>
+            </div>
+        </center>
+    </body>
+</html>

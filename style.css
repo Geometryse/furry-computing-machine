@@ -1,0 +1,236 @@
+body {
+  animation: Gradient 15s ease infinite;background: linear-gradient(-45deg, #d50cc7, #840cd5, #0cced5);height: 100vh;
+  color: #fff;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat
+}
+.game {
+  max-width:100%;
+  width:100vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius:4px;
+  filter:invert(0) ! important;
+}
+* {
+  box-sizing:border-box;
+}
+a {
+  color:slategrey;
+  text-decoration:none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(-45deg, #ce33c3, #9033ce, #31d3d8);
+  animation: Gradient 15s ease infinite;
+  border-color: rgb(0,0,0);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(-45deg, #8e0885, #61079e, #078a8e);
+  animation: Gradient 15s ease infinite;
+}
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  cursor: pointer;
+  border-color:white;
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  float:right;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  float:right;
+  background-color:transparent;
+  min-width: 160px;
+  z-index: 9;
+}
+.dropdown-content a {
+  float: right;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.show {
+  display: block;
+}
+.topbutton:hover {
+  background-color: white;
+  color:black;
+}
+.topbutton {
+  background-color:transparent;
+  color:white;
+  border:transparent;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 14px 16px;
+  text-align: center;
+  font-family:sans-serif;
+  font-size:11pt;
+}
+.navbar {
+  list-style-type:none;
+  margin:0;
+  top:10px;
+  padding:0;
+  float:top;
+  overflow:hidden;
+  position:sticky;
+  width:100%;
+  z-index:10;
+  font-family: sans-serif;
+} 
+.navbar a {
+  position:sticky;
+  float:left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+}
+.navbar a:hover {
+  background-color: white;
+  color:black;
+}
+.button:hover {
+  background-color: aqua;
+  color:black;
+}
+.active {
+  background-color: white;
+  color:black;
+  font-color:black;
+  border-radius: 4px;
+}
+@keyframes Gradient {
+  0% {background-position: 0% 50%}
+  50% {background-position: 100% 50%}
+  100% {background-position: 0% 50%}
+}
+@keyframes topsubtitles{
+  0% {opacity: 0}
+  66.5% {left:0px; top:200px; opacity: 0}
+  100% {left:0px; top:0px; opacity: 1}
+}
+div.topsubtitle{
+  position: relative;
+  animation-name: topsubtitles;
+  animation-duration: 3s;
+  z-index: 2;
+}
+div.navbar {
+    animation-name:navbars;
+    animation-duration: 3s;
+}
+@keyframes navbars{
+    0% {opacity:0;}
+    66.5% {opacity:0;}
+    100% {opacity:1;}
+}
+div.tintro{
+  position: relative;
+  animation-name: tintroboi;
+  animation-duration: 5s;
+  z-index: 4;
+  font-size:4vw;
+  font-family:sans-serif;
+  text-align:center;
+}
+@keyframes tintroboi{
+  0% {font-size:3vw;opacity:0;margin-top:300px}
+  12.5% {font-size:3vw;opacity:0;margin-top:300px}
+  25% {font-size:4vw;opacity:1;margin-top:300px}
+}
+.name {
+  text-align:center;
+  font-size:1.5vw;
+  color:snow;
+  text-decoration:none;
+}
+.column:hover {
+  transition-duration:0.4s;
+  background-color:#04e3ef;
+}
+.column {
+  font-family:sans-serif;
+  position:relative;
+  left:10%;
+  display:inline-block;
+  transition:0.4s;
+  background-color:transparent;
+  width:20%;
+  height:18vw;
+  max-height:100%;
+  border-radius:4px;
+  padding:10px;
+  overflow:hidden;
+}
+h3 {
+  font-size:16px;
+  margin:0px 0px 0px 0px;
+  font-weight:normal;
+}
+.row {
+  margin-left:auto; 
+  margin-right:auto;
+  justify-content:center;
+}
+.row:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+.button {
+  text-decoration:none;
+  font-size:1.5vw;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  background-color: transparent;
+  color: white;
+  border: 2px solid aqua;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12.5%;
+}
+.buttontext {
+  text-decoration:none;
+  font-size:1.5vw;
+  color:white;
+}
+.topadcont {
+  margin-left:auto;
+  margin-right:auto;
+  width:500px;
+  height:80px;
+  max-width:100%;
+  max-height:100%;
+  background-color:rgb(255,255,255);
+  border-radius:4px;
+}
